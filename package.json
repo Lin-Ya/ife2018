@@ -1,0 +1,20 @@
+{
+  "name": "ife2018",
+  "version": "1.0.0",
+  "description": "百度前端技术学院2018学期学习仓库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lin-Ya/ife2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lin-Ya/ife2018/issues"
+  },
+  "homepage": "https://github.com/Lin-Ya/ife2018#readme"
+}

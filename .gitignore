@@ -59,3 +59,4 @@ typings/
 
 #git
 *.git
+*.gitignore
