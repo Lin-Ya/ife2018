@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .tag {
+            margin: 20px;
+        }
+        button {
+            margin: 20px;
+        }
+
+        span {
+            position: relative;
+            transition: all .3s;
+        }
+        span::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            width: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            display: block;
+            border-bottom: 2px solid #088fc0;
+            transition: all .3s;
+            
+        }
+        .active span {
+            color: #088fc0;
+        }
+
+        .active span::after {
+            width: 110%;
+            color: #088fc0
+        }
+    </style>
     <title>Document</title>
 </head>
+
 <body>
-    <p>前端学院</p>
-    <button>切换样式</button>
+    <div class="tag active">
+        <span>前端学院</span>
+    </div>
+    <button id=btn>切换样式</button>
+    <script>
+        document.getElementById('btn').addEventListener('click', (e) => {
+            document.querySelector('.tag').classList.toggle('active')
+        })
+    </script>
 </body>
+
 </html>
