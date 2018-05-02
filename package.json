@@ -4,7 +4,8 @@
   "description": "百度前端技术学院2018学期学习仓库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
