@@ -4,6 +4,7 @@
 ## CSS学院
 ### 01.制作一个简单的菜单动画效果
 ![效果图](https://ws4.sinaimg.cn/large/006tKfTcgy1fqwr6d6wbmg303e03bk9t.gif)
+
 需要用到CSS transition 、transform以及js的事件处理。通过点击按钮，切换目标节点的class从而切换样式（改变样式的任务尽量交给CSS来完成）。
 html
 ```
