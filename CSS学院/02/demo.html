@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 700px;
+            margin: 150px auto;
+        }
+
+        .box {
+            border: 1px solid #EBEBEB;
+            background-color: #F7F6F6;
+            width: 60px;
+            height: 68px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 18px;
+            padding: 25px 0;
+        }
+
+        #box1 {
+            transform: skewX(30deg);
+        }
+        #box2 {
+            transform: scaleX(.5);
+        }
+        #box3 {
+            transform: rotate(45deg);
+        }
+        #box4 {
+            transform: translate(10px , 20px);
+        }
+        #box5 {
+            transform: skewX(30deg) scaleX(.5) rotate(45deg) translate(10px , 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box0">box0</div>
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+    </div>
+</body>
+
+</html>
