@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .card {
+            position: relative;
+        }
+
+        .card:hover #font {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover #back {
+            transform: rotateY(0deg);
+        }
+
+        img {
+            transition: all 3s;
+        }
+
+        #font {
+            backface-visibility: hidden;
+        }
+
+        #back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: rotateY(180deg);
+            backface-visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="./img/font.jpg" id="font">
+            <img src="./img/back.jpg" id="back">
+        </div>
+    </div>
+</body>
+
+</html>

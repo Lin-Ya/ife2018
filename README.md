@@ -111,3 +111,6 @@ span::after {
     border-radius: 40% 0% 50% 50%;
 }
 ```
+
+### 04.3D 空间的卡片翻转动效
+要完成卡片翻转的效果，这次我用到transform和backface-visibility属性，前者使用里面的rotateY实现围绕Y轴旋转自定义角度，后者用于隐藏（展示）被旋转的元素的背面。
